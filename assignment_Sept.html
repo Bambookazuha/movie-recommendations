@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment form</title>
+    <link rel="icon" type="image/x-icon" href="image/kazuha.jpg"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Young+Serif&display=swap" rel="stylesheet"> 
+    <style>
+      body {
+        font-family: 'Young Serif', serif;
+      }
+      h2,p {
+        text-align: left;
+      }
+
+      fieldset {
+        background-color: rgb(165, 229, 69);
+        margin: auto;
+        width: 30%;
+        border-radius: 10px;
+        border: 0;
+        height:500px;
+      }
+      p,
+      label {
+        font-size: larger;
+      }
+      img {
+        width: 10%;
+        height: 10%;
+      }
+      label {
+        text-align: left;
+      }
+
+      #Fname,#email {
+        width:30%;
+        height:20px;
+      }
+      img {
+        width:10%;
+        height:30px;
+      }
+      button {
+        width:35%;
+        color:black;
+        background-color: olivedrab;
+        border-bottom-left-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <h2>Please choose a payment method</h2>
+        <p>Personal information</p>
+
+        <!--name&email-->
+        <label for="fullname">Full Name</label> &nbsp; &nbsp; &nbsp;
+        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <label for="email">Email</label><br/>
+        <input
+          type="text"
+          name="name"
+          id="Fname"
+          value="Kyoshiro Kazuha"
+          placeholder="Fullname"
+        />
+        <input
+          type="text"
+          name="email"
+          id="email"
+          value="Kazuha@gmail.com"
+        /><br /><br />
+
+        <!--Radio buttons-->
+        <label>Choose a payment method</label><br/><br/>
+        <input type="radio" name="payment" id="visa"/>
+        <label for="visa"><img src="image/visa.jpg" alt="payment"/></label>
+
+        <input type="radio" name="payment" id="card"/>
+        <label for="paypal"><img src="image/paypal.jpg" alt="card"/></label>
+
+        <input type="radio" name="payment" id="applepay" />
+        <label for="applepay"
+        ><img src="image/apple.png" alt="apple"
+        /></label>
+
+        <input type="radio" name="payment" id="googlepay"/>
+        <label for="googlepay"><img src="image/gpay.jpg" alt="pay" /></label
+        ><br /><br />
+
+        <!--Card no&password-->
+        <label for="Credit card no">Credit Card Number</label>&nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; <label for="password">Password</label><br/>
+        <input type="text" name="number" id="number"/>&nbsp;<input type="text" name="psw" id="psw"/><br>
+        <!--Valid Until-->
+        <label for="no">Valid Until</label><br />
+        <select id="no" name="no" size="2">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option></select
+          >&nbsp; &nbsp; &nbsp; &nbsp;
+          <input
+          type="text"
+          name="year"
+          id="year"
+          placeholder="year"
+        /><br /><br />
+        <!--Button-->
+        <button style="background-color:rgb(245, 112, 64)" type="submit">
+          Cancel
+        </button>
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        <button style="background-color: rgb(90, 255, 1)" type="submit">
+          Submit
+        </button>
+
+      </fieldset>
+    </form>
+  </body>
+</html>

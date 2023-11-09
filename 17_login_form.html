@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        fieldset {
+            width:30%;
+            background-color: greenyellow;
+            margin: auto;
+            text-align: center;           
+        }
+        legend {
+            background-color:yellow;
+            padding:7px 12px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius:15px;
+        }
+        button {
+            background-color: black;
+            padding: 7px 13 px;
+            color: aqua;
+            font-size: 18px;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <fieldset>
+            <legend>Login information</legend>
+            <input type="text" value="" name="username" placeholder="username"><br><br>
+            <input type="email" value="" name="email" placeholder="enter email" required><br><br>
+            <input type="password" value="" name="psw" placeholder="enter password"><br><br>
+            <button type="submit">Log in</button>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form {
+            background-color:orange;
+            width:27%;
+            margin: auto;
+            padding: 30px;
+        }
+        #fname, #lname, #data-list{
+            width:200px;
+            height:35px;
+        }
+        select {
+            width:85px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <form>
+        <!--data list-->
+        <input list="name_id" name="name_id" id="data-list">
+        <datalist id="name_id">
+            <option value="Ms">Ms</option>
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+        </datalist>
+        <br><br>
+        <!--Input Elements-->
+        <label for="fname">First Name:</label><br>
+        <input type="text" id=fname name="fname"  value="Kyoshiro"><br><br>
+        <label for="lname">Last Name:</label><br>
+        <input type=text id="lname" name="lname" value="kazuha"><br><br>
+
+        <!--buttons-->
+        <input type="submit" value="Submit">
+        <button type="submit">Login</button>
+        <button type="button">Click here</button>
+        <button type="button"><a href="15_iframe.html">go now</a></button>
+        <button type="reset">Clear</button>
+        <button type="button" onclick="alert('Hello')">Click now</button>
+        <br><br>
+
+        <!--Radio buttons-->
+        <lable>Gender Information</lable><br>
+        <input type="radio" id="male" name="gender" vale="Male">
+        <lable for="male">Male</lable>
+        <input type="radio" id="female" name="gender" vale="female">
+        <lable for="female">female</lable>
+        <input type="radio" id="other" name="gender" value="Other">
+        <lable for="Other">Other</lable><br><br>
+       
+        <!--Checkbox-->
+        <lable>Education level</lable><br>
+        <input type="checkbox" id="be" name="degree1" value="BE">
+        <lable for="be">Be</lable>
+        <input type="checkbox" id="me" name="degree2" value="ME">
+        <lable for="Me">Me</lable>
+
+        <input type="checkbox" id="phd" name="degree3" value="PhD">
+        <lable for="phd">PHD</lable>
+        <br><br>
+        <!--Dropdown list-->
+        <lable>Birthdate Information</lable><br>
+        <select id="day" name="day" size="2" multiple>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option> 
+            <option value="4">4</option>
+            <option value="5">26</option>      
+        </select>
+        <select id="month" name="month">
+            <option value="jan">January</option>
+            <option value="feb">February</option>
+            <option value="march">March</option>
+            <option value="april">april</option>
+            <option value="May">May</option>
+        </select>
+        <select id="year" name="year">
+            <option value="2005">2005</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2000">2000</option>
+            <option value="1996">1996</option>
+        </select>
+        <br><br>
+        <!--textarea-->
+        <lable>Description</lable><br>
+        <textarea name="des" rows="7" cols="35"></textarea>
+
+        <input type="image" src="image/Bada lee.jpg" alt="submit" width="50px" height="50px">
+    </form>
+</body>
+</html>

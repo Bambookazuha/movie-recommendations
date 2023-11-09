@@ -1,0 +1,16 @@
+h1 {
+    color: chartreuse;
+    text-align: center;
+}
+h3 {
+    color: coral;
+}
+p {
+    color: chocolate;
+    font-size:18px;
+    font-family: monospace;
+
+}
+body {
+    background-color: rgba(140, 36, 205, 0.347);
+}
